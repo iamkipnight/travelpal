@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "beta": 1,
+ "creation": "2024-06-05 23:09:57.087463",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "iatanumber",
+  "productcode",
+  "transactiondate",
+  "transactiontype",
+  "documentnumber",
+  "branchnumber"
+ ],
+ "fields": [
+  {
+   "fieldname": "iatanumber",
+   "fieldtype": "Int",
+   "label": "IataNumber",
+   "length": 7
+  },
+  {
+   "fieldname": "productcode",
+   "fieldtype": "Int",
+   "label": "ProductCode"
+  },
+  {
+   "fieldname": "transactiondate",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "TransactionDate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "transactiontype",
+   "fieldtype": "Int",
+   "label": "TransactionType"
+  },
+  {
+   "fieldname": "documentnumber",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "DocumentNumber",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "branchnumber",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "BranchNumber",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-05 23:09:57.087463",
+ "modified_by": "Administrator",
+ "module": "Travel Pal",
+ "name": "Ticket",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
