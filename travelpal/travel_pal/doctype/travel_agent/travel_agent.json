@@ -7,6 +7,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "agent_id",
   "user_id",
   "employee_id",
   "signoncode",
@@ -33,18 +34,26 @@
    "label": "SignOnCode"
   },
   {
+   "bold": 1,
    "fetch_from": "employee_id.employee_name",
    "fetch_if_empty": 1,
    "fieldname": "agent",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "label": "Agent",
    "options": "Employee",
    "read_only": 1
+  },
+  {
+   "fieldname": "agent_id",
+   "fieldtype": "Data",
+   "label": "Agent Id",
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-11 03:40:12.076790",
+ "modified": "2024-06-11 04:23:49.765979",
  "modified_by": "Administrator",
  "module": "Travel Pal",
  "name": "Travel Agent",
