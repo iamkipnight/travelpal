@@ -1,0 +1,188 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-11 12:16:06.260656",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "client_section",
+  "customer",
+  "customer_name",
+  "column_break_2khm5",
+  "booking_agent",
+  "ticketing_agent",
+  "passengers_section",
+  "passanger",
+  "document_number",
+  "routing_section",
+  "airline_code",
+  "airline_name",
+  "routing",
+  "fare_and_taxes_section",
+  "fare",
+  "taxe",
+  "markup",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_travdoc"
+ ],
+ "fields": [
+  {
+   "fieldname": "passanger",
+   "fieldtype": "Link",
+   "label": "Passanger",
+   "options": "Passanger"
+  },
+  {
+   "fieldname": "document_number",
+   "fieldtype": "Data",
+   "label": "Document Number"
+  },
+  {
+   "fieldname": "airline_code",
+   "fieldtype": "Data",
+   "label": "Airline Code"
+  },
+  {
+   "fieldname": "airline_name",
+   "fieldtype": "Data",
+   "label": "Airline Name"
+  },
+  {
+   "fieldname": "booking_agent",
+   "fieldtype": "Link",
+   "label": "Booking Agent",
+   "options": "Travel Agent"
+  },
+  {
+   "fieldname": "ticketing_agent",
+   "fieldtype": "Link",
+   "label": "Ticketing Agent",
+   "options": "Travel Agent"
+  },
+  {
+   "fieldname": "routing",
+   "fieldtype": "Data",
+   "label": "Routing"
+  },
+  {
+   "fieldname": "fare",
+   "fieldtype": "Currency",
+   "label": "Fare"
+  },
+  {
+   "fieldname": "taxe",
+   "fieldtype": "Currency",
+   "label": "Taxe"
+  },
+  {
+   "fieldname": "markup",
+   "fieldtype": "Currency",
+   "label": "Markup"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "search_index": 1
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "TravDoc"
+  },
+  {
+   "fieldname": "parent_travdoc",
+   "fieldtype": "Link",
+   "label": "Parent TravDoc",
+   "options": "TravDoc"
+  },
+  {
+   "fieldname": "client_section",
+   "fieldtype": "Section Break",
+   "label": "Client"
+  },
+  {
+   "bold": 1,
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "passengers_section",
+   "fieldtype": "Section Break",
+   "label": "Passengers",
+   "options": "Passanger"
+  },
+  {
+   "fieldname": "routing_section",
+   "fieldtype": "Section Break",
+   "label": "Routing"
+  },
+  {
+   "fieldname": "fare_and_taxes_section",
+   "fieldtype": "Section Break",
+   "label": "Fare and Taxes"
+  },
+  {
+   "fieldname": "column_break_2khm5",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2024-06-11 12:40:21.169425",
+ "modified_by": "Administrator",
+ "module": "Travel Pal",
+ "name": "TravDoc",
+ "nsm_parent_field": "parent_travdoc",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
