@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "creation": "2024-06-11 04:28:50.378682",
  "doctype": "DocType",
@@ -43,7 +44,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-11 05:33:34.716251",
+ "modified": "2024-06-29 19:50:42.478534",
  "modified_by": "Administrator",
  "module": "Travel Pal",
  "name": "Airline",
