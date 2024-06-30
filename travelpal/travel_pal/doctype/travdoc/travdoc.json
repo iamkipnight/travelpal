@@ -7,9 +7,6 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "client_section",
-  "customer",
-  "customer_name",
   "column_break_2khm5",
   "booking_agent",
   "ticketing_agent",
@@ -85,13 +82,6 @@
    "label": "Markup"
   },
   {
-   "fieldname": "customer",
-   "fieldtype": "Link",
-   "label": "Customer",
-   "options": "Customer",
-   "search_index": 1
-  },
-  {
    "fieldname": "lft",
    "fieldtype": "Int",
    "hidden": 1,
@@ -126,19 +116,6 @@
    "options": "TravDoc"
   },
   {
-   "fieldname": "client_section",
-   "fieldtype": "Section Break",
-   "label": "Client"
-  },
-  {
-   "bold": 1,
-   "fetch_from": "customer.customer_name",
-   "fieldname": "customer_name",
-   "fieldtype": "Data",
-   "label": "Customer Name",
-   "read_only": 1
-  },
-  {
    "fieldname": "passengers_section",
    "fieldtype": "Section Break",
    "label": "Passengers",
@@ -156,32 +133,20 @@
   },
   {
    "fieldname": "column_break_2khm5",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "label": "Travel Details"
   }
  ],
  "index_web_pages_for_search": 1,
- "is_tree": 1,
+ "istable": 1,
  "links": [],
- "modified": "2024-06-11 12:40:21.169425",
+ "modified": "2024-06-30 03:37:27.978456",
  "modified_by": "Administrator",
  "module": "Travel Pal",
  "name": "TravDoc",
  "nsm_parent_field": "parent_travdoc",
  "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
+ "permissions": [],
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

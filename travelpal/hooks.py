@@ -192,7 +192,7 @@ app_license = "MIT"
 # 		"filter_by": "{filter_by}",
 # 		"redact_fields": ["{field_1}", "{field_2}"],
 # 		"partial": 1,
-# 	},
+# 	}
 # 	{
 # 		"doctype": "{doctype_2}",
 # 		"filter_by": "{filter_by}",
@@ -213,3 +213,7 @@ app_license = "MIT"
 # auth_hooks = [
 # 	"travelpal.auth.validate"
 # ]
+fixtures = [
+    {"dt": "Airline"},
+    {"dt": "TravDoc"}
+]
